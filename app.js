@@ -7,8 +7,8 @@ var moves;
 var timeover = false;
 var movecount =0;
 (function(){
-  var b=['./images/london-bridge.jpg','./images/lotus.JPG','./images/agra.jpg']
-  var a = Math.floor(Math.random()*3);
+  var b=['./images/london-bridge.jpg','./images/agra.jpg']
+  var a = Math.floor(Math.random()*2);
     mainimage = b[a]
   console.log(mainimage)
   document.getElementById('setimage').src=mainimage
