@@ -10,7 +10,7 @@ var movecount =0;
   var b=['./images/london-bridge.jpg','./images/lotus.JPG','./images/agra.jpg']
   var a = Math.floor(Math.random()*3);
     mainimage = b[a]
- 
+  console.log(mainimage)
   document.getElementById('setimage').src=mainimage
   breakimage(mainimage,3)
 })();
