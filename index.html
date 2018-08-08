@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Puzzle</title>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<center><h1>Image Puzzle</h1></center>
+		<br><br>
+		 
+		<div class="row">
+			<div class="col-md-6">
+				<center> <h4>steps:<span id="moves"></span></h4>
+           <h4>time taken:<span id="timer"></span></h4>
+						<table border="1" style="width: 400px;height: 400px;">
+								<tbody id="tbody">						
+						</tbody>
+						</table>
+				</center>
+			</div>
+			<div class="col-md-6">
+					<center>
+						<button class= "gametype btn-success" id="easy">easy</button>
+						<button class= "gametype btn-success" id="hard">hard</button>
+						<br>
+						<img src="" id="setimage" width = "350px" height="350px">
+				</div>
+		</div>
+		<br><br>
+		<div class="row">
+				<div class="col-md-3">
+					<h2>click image <br>  <br> You like play</h2>
+				  </div>
+          <div class="col-md-3">
+				<a onclick="breakimage('./images/london-bridge.jpg',3)"><img src="images/london-bridge.jpg" width = "150px" height="150px"></a>
+		  </div>
+		  <div class="col-md-3">
+				<a onclick="breakimage('./images/lotus.jpg',3)"><img src="images/lotus.jpg" width = "150px" height="150px"></a>
+
+		  </div>
+		  <div class="col-md-3">
+				<a onclick="breakimage('./images/agra.jpg',3)"><img src="images/agra.jpg" width = "150px" height="150px"></a>
+		  </div>
+		</div>
+				
+
+
+
+<!-- </center> -->
+	<span style="color:red">su<span style="color:blue">dh<span style="color:green">a</span>k</span>ar</span>
+</body>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="./app.js"></script>
+</html>

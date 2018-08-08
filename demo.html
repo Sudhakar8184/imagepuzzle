@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Puzzle</title>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+    <br>
+    <br>
+
+ <center><div style="background-color: royalblue;height: 80px;width: 200px;">
+   <p id="code" style="color:white;padding-top:15px;font-size: 300%">
+    
+   </p>
+  </div></center> 
+</body>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+
+    for(var i=0;i<6;i++){
+        var a = Math.floor(Math.random()*9);
+       let  block=document.createElement('span');
+      block.innerHTML=a
+      if(i==1 || i==3 || i==5){
+        block.setAttribute('style','font-size:70%,font-family:Arial Black;')
+      }
+      if(i==2|| i==4 || i==0){
+        block.setAttribute('style','font-size:120%;font-family:Impact;')
+      }
+       let head = document.getElementById('code');
+       head.appendChild(block);
+    }
+    
+</script>
+</html>
